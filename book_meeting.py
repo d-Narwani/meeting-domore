@@ -70,6 +70,9 @@ def create_event():
     return jsonify({'meetingLink': meeting_link})
 
 
+@app.route('/', methods=['GET'])
+def index():
+    return "Chal raha hai sab"
+
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
-
